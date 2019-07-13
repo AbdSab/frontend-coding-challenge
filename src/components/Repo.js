@@ -7,7 +7,7 @@ function Repo({data, interval}) {
     const {userAvatar,userName,repoName,repoDescription,repoIssuesCount,repoStarsCount} = data;
 
     return (
-        <div className={"col-12 mt-2 shadow-sm"}>
+        <div className={"col-12 mt-2 p-2 shadow-sm"}>
             <div className={"row"}>
                 <div className={"col-md-2 col-12"}>
                     <img className={"w-100 img-fluid"} src={userAvatar} alt={userName+"'s avatar"}/>

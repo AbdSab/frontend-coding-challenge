@@ -1,8 +1,8 @@
 /**
  * Github Api parser
  */
-const githubApiParser = (repos) =>{
-    return repos.items.map( repo => {
+const parseApiRepos = (repos) =>{
+    const items =  repos.items.map( repo => {
         return {
             repoName: repo.name,
             repoDescription: repo.description,
@@ -12,6 +12,10 @@ const githubApiParser = (repos) =>{
             userAvatar: repo.owner.avatar_url
         }
     });
+    return {
+        ...repos,
+        items:items
+    }
 };
 
-export default githubApiParser;
+export default parseApiRepos;
