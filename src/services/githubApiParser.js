@@ -4,6 +4,7 @@
 const parseApiRepos = (repos) =>{
     const items =  repos.items.map( repo => {
         return {
+            id: repo.id,
             repoName: repo.name,
             repoDescription: repo.description,
             repoStarsCount: repo.stargazers_count,
