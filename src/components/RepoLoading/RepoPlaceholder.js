@@ -1,7 +1,7 @@
 import React from 'react';
 import "./style.scss";
 
-const RepoLoading = () => {
+const RepoPlaceholder = () => {
     return(
         <div className={"col-12 mt-2 p-2 shadow-sm"}>
             <div className={"row"}>
@@ -18,4 +18,4 @@ const RepoLoading = () => {
     )
 }
 
-export default RepoLoading;
+export default RepoPlaceholder;
