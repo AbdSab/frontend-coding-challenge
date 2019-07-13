@@ -5,6 +5,7 @@ import githubApiParser from '../services/githubApiParser';
 
 const RepoList = () => {
 
+    const DAYS_INTERVAL = 30;
     const [repos, setRepos] = useState([]);
 
     const fetchRepos = () =>{
@@ -17,7 +18,7 @@ const RepoList = () => {
         console.log(repos)
     }, [repos]);
 
-    const reposList = repos.map(repo => (<Repo key={repo.id} data={repo} />));
+    const reposList = repos.map(repo => (<Repo key={repo.id} data={repo} interval={DAYS_INTERVAL} />));
 
     return (
         <div className={"row"}>
