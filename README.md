@@ -23,7 +23,7 @@ While fetching the api, a placeholder similar to facebook's loading will appear 
 #### api
 This folder contain the wrapper for github api.
 #### components
-React's componenets
+React's components
 #### helper
 It has some useful functions, in this case it contain the infinite scroll function
 #### mock
