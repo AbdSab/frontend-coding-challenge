@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Repo from './Repo';
 import {fetchGithubRepos} from '../api/githubApi';
-import RepoPlaceholder from "./RepoPlaceholder/RepoPlaceholder";
+import RepoPlaceholder from "./RepoPlaceholder";
 import useInfiniteScroll from '../helper/useInfiniteScroll';
 
 const RepoList = () => {
@@ -52,7 +52,7 @@ const RepoList = () => {
 
     const reposList = state.repos.map(repo => (
         <Repo key={repo.id} data={repo} interval={DAYS_INTERVAL} />
-        ));
+    ));
 
     const reposPlaceholderList = Array.from(
         Array(MAX_REPOS_PLACEHOLDERS).keys(), n=>(<RepoPlaceholder key={n}/>)

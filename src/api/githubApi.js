@@ -1,6 +1,5 @@
 /**
  * Github Repo Api Wrapper
- * @param config
  */
 import githubApiParser from "../services/githubApiParser";
 
